@@ -13,6 +13,8 @@
 		9BBE28C223C9139B00D75F5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE28C023C9139B00D75F5B /* Main.storyboard */; };
 		9BBE28C423C9139C00D75F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE28C323C9139C00D75F5B /* Assets.xcassets */; };
 		9BBE28C723C9139C00D75F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE28C523C9139C00D75F5B /* LaunchScreen.storyboard */; };
+		9BBE28CF23C913E400D75F5B /* Places.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE28CE23C913E400D75F5B /* Places.plist */; };
+		9BBE28D123C9156600D75F5B /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE28D023C9156600D75F5B /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9BBE28C323C9139C00D75F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BBE28C623C9139C00D75F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BBE28C823C9139C00D75F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BBE28CE23C913E400D75F5B /* Places.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Places.plist; sourceTree = "<group>"; };
+		9BBE28D023C9156600D75F5B /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +64,11 @@
 				9BBE28BC23C9139B00D75F5B /* SceneDelegate.swift */,
 				9BBE28BE23C9139B00D75F5B /* ViewController.swift */,
 				9BBE28C023C9139B00D75F5B /* Main.storyboard */,
+				9BBE28D023C9156600D75F5B /* Place.swift */,
 				9BBE28C323C9139C00D75F5B /* Assets.xcassets */,
 				9BBE28C523C9139C00D75F5B /* LaunchScreen.storyboard */,
 				9BBE28C823C9139C00D75F5B /* Info.plist */,
+				9BBE28CE23C913E400D75F5B /* Places.plist */,
 			);
 			path = iOS_Maps_2;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			files = (
 				9BBE28C723C9139C00D75F5B /* LaunchScreen.storyboard in Resources */,
 				9BBE28C423C9139C00D75F5B /* Assets.xcassets in Resources */,
+				9BBE28CF23C913E400D75F5B /* Places.plist in Resources */,
 				9BBE28C223C9139B00D75F5B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +148,7 @@
 				9BBE28BF23C9139B00D75F5B /* ViewController.swift in Sources */,
 				9BBE28BB23C9139B00D75F5B /* AppDelegate.swift in Sources */,
 				9BBE28BD23C9139B00D75F5B /* SceneDelegate.swift in Sources */,
+				9BBE28D123C9156600D75F5B /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
