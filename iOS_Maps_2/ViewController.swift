@@ -77,6 +77,16 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         return MKOverlayRenderer()
     }
  
+    
+  func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+    guard let annotation=view.annotation as? Place, let title=annotation.title else{
+      return
+    }
+    let alertController=UIAlertController(title: "Welcome to\(title)", message: "Have a good time in \(title)", preferredStyle: .alert)
+    let cancelAction=UIAlertAction(title: "OK", style: .cancel, handler: nil)
+    alertController.addAction(cancelAction)
+    present(alertController,animated: true,completion: nil)
+    }
 }
 
 extension ViewController:MKMapViewDelegate{
@@ -87,6 +97,8 @@ extension ViewController:MKMapViewDelegate{
         else{
             let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "annotationView") ?? MKAnnotationView()
             annotationView.image=UIImage(named: "ic_place")
+            annotationView.canShowCallout = true
+            annotationView.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
         return annotationView
         }
     }
